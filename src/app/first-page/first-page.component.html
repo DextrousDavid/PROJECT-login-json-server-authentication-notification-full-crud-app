@@ -1,0 +1,43 @@
+<div class="login-root">
+    <div class="box-root flex-flex flex-direction--column" style="min-height: 100vh;flex-grow: 1;">
+        <div class="box-root padding-top--24 flex-flex flex-direction--column" style="flex-grow: 1; z-index: 9;">
+            <div class="box-root padding-top--48 padding-bottom--24 flex-flex flex-justifyContent--center">
+                <h1>Form</h1>
+            </div>
+            <div class="formbg-outer">
+                <div class="formbg">
+                    <div class="formbg-inner padding-horizontal--48">
+                        <h3 class="padding-bottom--15">Sign in to your account</h3>
+
+                        <form>
+                            <div class="field padding-bottom--24">
+                                <label for="fname">First Name</label>
+                                <input type="text" name="fname">
+                            </div>
+                            <div class="field padding-bottom--24">
+                                <label for="lname">Last Name</label>
+                                <input type="text" name="lname">
+                            </div>
+                            <div class="field padding-bottom--24">
+                            <label for="gender">Gender</label>
+                            <select class="field padding-bottom--24">
+                                <option default value="male">Male</option>
+                                <option value="female">Female</option>
+                            </select>
+                            </div>
+                        <div class="field padding-bottom--24">
+                            <label for="phone">Phone Number</label>
+                            <input type="text" name="phone">
+                        </div>
+                        <div class="field padding-bottom--24">
+                            <label for="address">Address</label>
+                            <input type="text" name="address">
+                        </div>
+                    </form>
+                    <button (click)="routeToSecondPage()" class="btnSubmit padding-bottom--24">Submit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
