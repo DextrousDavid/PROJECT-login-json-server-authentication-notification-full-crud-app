@@ -3,6 +3,8 @@ import { CommonModule } from '@angular/common';
 
 import { FirstPageRoutingModule } from './first-page-routing.module';
 import { FirstPageComponent } from './first-page.component';
+import { ReactiveFormsModule } from '@angular/forms';
+
 
 
 @NgModule({
@@ -11,7 +13,8 @@ import { FirstPageComponent } from './first-page.component';
   ],
   imports: [
     CommonModule,
-    FirstPageRoutingModule
+    FirstPageRoutingModule,
+    ReactiveFormsModule
   ]
 })
 export class FirstPageModule { }

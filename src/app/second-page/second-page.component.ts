@@ -1,17 +1,39 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { ActivatedRoute } from '@angular/router';
+import { UserTransmitterService } from '../services/user-transmitter.service';
+import { Subscription, debounceTime } from 'rxjs'
+import { User } from '../models/user';
 
 @Component({
   selector: 'app-second-page',
   templateUrl: './second-page.component.html',
   styleUrls: ['./second-page.component.scss']
 })
-export class SecondPageComponent {
- constructor(private router: Router, private route: ActivatedRoute) {
+export class SecondPageComponent implements OnInit {
 
-  }
+  getFormValues$!: Subscription;
+  users: User[] = [];
+  constructor(private router: Router, private route: ActivatedRoute, private service: UserTransmitterService) {}
+  
+  // routes you to first page
   routeToFirstPage() {
     this.router.navigate(['/firstPage/first'])
   }
+
+  ngOnInit(): void {
+    this.getFormValues$ = this.service.getFormObservable().pipe(debounceTime(200)).subscribe({
+      next: (elem: any) => {
+        console.log('Form Values 123>>', elem);
+        this.users = elem;
+        console.log('Table Values>>', this.users);
+      },
+      error: (error: any) => {
+        console.error('Error from API>>',error)
+      },
+      complete: () => console.info('Form Values have entered the array>>')
+    })
+  }
+
+
 }

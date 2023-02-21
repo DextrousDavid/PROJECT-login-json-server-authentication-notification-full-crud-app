@@ -8,28 +8,20 @@
             <th>Phone Number</th>
             <th>Address</th>
             <th>Delete Row</th>
+            <th>{{this.users | json}}</th>
         </tr>
     </thead>
     <tbody>
-        <tr>
-            <td>1</td>
-            <td>elem</td>
-            <td>elem</td>
-            <td>elem</td>
-            <td>elem</td>
-            <td>elem</td>
-            <td>X</td>
-        </tr>
-        <tr class="active-row">
-            <td>2</td>
-            <td>elem</td>
-            <td>elem</td>
-            <td>elem</td>
-            <td>elem</td>
-            <td>elem</td>
-            <td>X</td>
-        </tr>
-        <!-- and so on... -->
+        <tr *ngFor="let user of users; let id = index">
+            <td>{{id + 1}}</td>
+            <td>{{user.firstName}}</td>
+            <td>{{user.lastName}}</td>
+            <td>{{user.gender}}</td>
+            <td>{{user.phoneNumber}}</td>
+            <td>{{user.address}}</td>
+            <td class="delete-row">Delete Row</td>
+        </tr><!-- and so on... -->
+        <br>
     </tbody>
-    <button (click)="routeToFirstPage()" class="btnSubmit padding-bottom--24">Go back</button>
-</table>
+</table><br>
+<button (click)="routeToFirstPage()" class="btnSubmit padding-bottom--24">Go back</button>
