@@ -25,7 +25,6 @@ export class FirstPageComponent implements OnInit {
   constructor(private router: Router, private route: ActivatedRoute, private service: UserTransmitterService) { }
   
   // ConsoleForm
-
   routeToSecondPage() {
     this.router.navigate(['/secondPage/second'])
   }
@@ -43,6 +42,7 @@ export class FirstPageComponent implements OnInit {
 
   formPost() {
     // this.users.push(this.userForm.value);
+
     // this.userForm.value; takes the data gotten from FormGroup and pushes it into this.service.allUsers.
     // open user-transmitter.services.ts, you'll find the allUsers variable, which stores the User []. ~~single users~~
     this.service.allUsers.push(this.userForm.value);
@@ -52,6 +52,7 @@ export class FirstPageComponent implements OnInit {
     console.log('UserInterface>>', this.users);
   }
 
+  // loads FormGroup as soon as browser opens
   ngOnInit(): void {
     this.formPostInterface() 
   }

@@ -4,12 +4,14 @@ import { CommonModule } from '@angular/common';
 import { FirstPageRoutingModule } from './first-page-routing.module';
 import { FirstPageComponent } from './first-page.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { EditComponent } from './edit/edit.component';
 
 
 
 @NgModule({
   declarations: [
-    FirstPageComponent
+    FirstPageComponent,
+    EditComponent
   ],
   imports: [
     CommonModule,

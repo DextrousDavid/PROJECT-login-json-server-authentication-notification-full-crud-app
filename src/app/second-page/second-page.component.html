@@ -7,19 +7,23 @@
             <th>Gender</th>
             <th>Phone Number</th>
             <th>Address</th>
-            <th>Delete Row</th>
+            <th></th>
+            <th></th>
         </tr>
     </thead>
     <tbody>
-        <tr *ngFor="let user of users; let id = index">
+        <tr *ngFor="let user of users; let id = index"> 
             <td>{{id + 1}}</td>
             <td>{{user.firstName}}</td>
             <td>{{user.lastName}}</td>
             <td>{{user.gender}}</td>
             <td>{{user.phoneNumber}}</td>
             <td>{{user.address}}</td>
-            <td class="delete-row">Delete Row</td>
-        </tr><!-- and so on... -->
+            <td><button class="edit-row-button" (click)="routeToEditPage(user)">Edit</button>
+            </td>
+            <td><button class="delete-row-button" (click)="onDelete(user)">X</button>
+            </td>
+        </tr><!-- and so on... --->
         <br>
         <button (click)="routeToFirstPage()" class="btnSubmit padding-bottom--24">Go back</button>
     </tbody>

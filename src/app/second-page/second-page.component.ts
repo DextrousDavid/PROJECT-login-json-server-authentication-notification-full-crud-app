@@ -21,6 +21,30 @@ export class SecondPageComponent implements OnInit {
     this.router.navigate(['/firstPage/first']);
   }
 
+  routeToEditPage(user: User) {
+    console.log('Profile>>', user);
+    // this.service.setUserProfile(user);
+    // this.service.setIsEdit(true);
+
+    localStorage.setItem('firstName', user.firstName);
+    localStorage.setItem('lastName', user.lastName);
+    localStorage.setItem('gender', user.gender);
+    localStorage.setItem('phoneNumber', user.phoneNumber);
+    localStorage.setItem('address', user.address);
+
+    this.router.navigate(['/firstPage/edit']);
+  }
+
+  //Delete Customer row by id
+  //Splice method
+  onDelete(elem: any) {
+    this.users.forEach((row: any, index: any) => {
+      if(row === elem) {
+        this.users.splice(index, 1);
+      }
+    })
+  }
+
 
   ngOnInit(): void {
     // this.getFormValues$ = this.service.getFormObservable().pipe(debounceTime(200)).subscribe({
@@ -37,9 +61,8 @@ export class SecondPageComponent implements OnInit {
 
     // stores the value of this.services.allUsers in this.users 
     this.users = this.service.allUsers;
-    console.log("get all Users",this.users);
+    console.log("All Users, second-page>>",this.users);
 
   }
-
 
 }

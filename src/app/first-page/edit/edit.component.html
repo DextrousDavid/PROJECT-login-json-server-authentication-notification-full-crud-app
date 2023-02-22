@@ -1,0 +1,43 @@
+<div class="login-root">
+    <div class="box-root flex-flex flex-direction--column" style="min-height: 100vh;flex-grow: 1;">
+        <div class="box-root padding-top--24 flex-flex flex-direction--column" style="flex-grow: 1; z-index: 9;">
+            <div class="formbg-outer">
+                <div class="formbg">
+                    <div class="formbg-inner padding-horizontal--48">
+                        <h3 class="padding-bottom--15">Edit Form</h3>
+
+                        <!-- <form [formGroup]="userForm" (ngSubmit)="formPost()"> -->
+                            <form [formGroup]="userForm" (ngSubmit)="formPost()">
+                            <div class="field padding-bottom--24">
+                                <label for="fname">First Name</label>
+                                <input type="text" formControlName="firstName">
+                            </div>
+                            <div class="field padding-bottom--24">
+                                <label for="lname">Last Name</label>
+                                <input type="text" formControlName="lastName">
+                            </div>
+                            <div class="field padding-bottom--24">
+                            <label for="gender">Gender</label>
+                            <select class="field padding-bottom--24" formControlName="gender">
+                                <option value="male">Male</option>
+                                <option value="female">Female</option>
+                            </select>
+                            </div>
+                        <div class="field padding-bottom--24">
+                            <label for="phone">Phone Number</label>
+                            <input type="text" name="phone" formControlName="phoneNumber">
+                        </div>
+                        <div class="field padding-bottom--24">
+                            <label for="address">Address</label>
+                            <input type="text" name="address" formControlName="address">
+                        </div>
+                    </form>
+                    <button (click)="formPost()" class="btnSubmit padding-bottom--24">Next</button>
+                    <!-- <button class="btnSubmit padding-bottom--24">Next</button> -->
+                    <!-- <button (click)="routeToSecondPage()" class="btnSubmit padding-bottom--24">Next</button> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
