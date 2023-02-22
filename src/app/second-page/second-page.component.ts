@@ -13,26 +13,32 @@ import { User } from '../models/user';
 export class SecondPageComponent implements OnInit {
 
   getFormValues$!: Subscription;
-  users: User[] = [];
+  users: User[] | any = [];
   constructor(private router: Router, private route: ActivatedRoute, private service: UserTransmitterService) {}
   
   // routes you to first page
   routeToFirstPage() {
-    this.router.navigate(['/firstPage/first'])
+    this.router.navigate(['/firstPage/first']);
   }
 
+
   ngOnInit(): void {
-    this.getFormValues$ = this.service.getFormObservable().pipe(debounceTime(200)).subscribe({
-      next: (elem: any) => {
-        console.log('Form Values 123>>', elem);
-        this.users = elem;
-        console.log('Table Values>>', this.users);
-      },
-      error: (error: any) => {
-        console.error('Error from API>>',error)
-      },
-      complete: () => console.info('Form Values have entered the array>>')
-    })
+    // this.getFormValues$ = this.service.getFormObservable().pipe(debounceTime(200)).subscribe({
+    //   next: (elem: any) => {
+    //     console.log('Form Values 123>>', elem);
+    //     this.users = elem;
+    //     console.log('Table Values>>', this.users);
+    //   },
+    //   error: (error: any) => {
+    //     console.error('Error from API>>', error)
+    //   },
+    //   complete: () => console.info('Form Values have entered the array>>')
+    // });
+
+    // stores the value of this.services.allUsers in this.users 
+    this.users = this.service.allUsers;
+    console.log("get all Users",this.users);
+
   }
 
 

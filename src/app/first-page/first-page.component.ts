@@ -42,7 +42,11 @@ export class FirstPageComponent implements OnInit {
   }
 
   formPost() {
-    this.users = this.userForm.value;
+    // this.users.push(this.userForm.value);
+    // this.userForm.value; takes the data gotten from FormGroup and pushes it into this.service.allUsers.
+    // open user-transmitter.services.ts, you'll find the allUsers variable, which stores the User []. ~~single users~~
+    this.service.allUsers.push(this.userForm.value);
+
     this.service.setFormObservable(this.users);
     this.router.navigate(['/secondPage/second'], {relativeTo: this.route});
     console.log('UserInterface>>', this.users);

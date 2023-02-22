@@ -8,7 +8,6 @@
             <th>Phone Number</th>
             <th>Address</th>
             <th>Delete Row</th>
-            <th>{{this.users | json}}</th>
         </tr>
     </thead>
     <tbody>
@@ -22,6 +21,6 @@
             <td class="delete-row">Delete Row</td>
         </tr><!-- and so on... -->
         <br>
+        <button (click)="routeToFirstPage()" class="btnSubmit padding-bottom--24">Go back</button>
     </tbody>
 </table><br>
-<button (click)="routeToFirstPage()" class="btnSubmit padding-bottom--24">Go back</button>
