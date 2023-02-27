@@ -5,6 +5,7 @@ import { FirstPageRoutingModule } from './first-page-routing.module';
 import { FirstPageComponent } from './first-page.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { EditComponent } from './edit/edit.component';
+import { HttpClientModule } from '@angular/common/http';
 
 
 
@@ -16,7 +17,8 @@ import { EditComponent } from './edit/edit.component';
   imports: [
     CommonModule,
     FirstPageRoutingModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
   ]
 })
 export class FirstPageModule { }

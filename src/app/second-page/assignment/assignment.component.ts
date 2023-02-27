@@ -1,131 +1,32 @@
 import { Component, OnInit } from '@angular/core';
+// import { Food } from 'src/app/models/food';
+import { foodData } from "../../data/food"
 
 @Component({
   selector: 'app-assignment',
   templateUrl: './assignment.component.html',
   styleUrls: ['./assignment.component.scss']
 })
-export class AssignmentComponent {
-foods: any = [
-    { 
-        foodId : 1,
-        	protein : {
-            beans : "Beans",
-            egg : "Egg",
-            fish: "Fish"
-        },
-        carbonhydrate : {
-            rice : "Rice",
-            yam : "Yam",
-            indomie : "Noodles"
-        },
-        junks :{
-            biscuits : "Biscuit",
-            doughnut : "Doughnut",
-            chips : "Plaintain-chips"
-        },
-        drinks :{
-            water : "Water",
-            heinaken : "Heinaken",
-            beveraga : "Tea"
-        } 
-    },
-    {
-        foodId : 2,
-        protein : {
-            beans : "Beans",
-            egg : "Egg",
-            fish: "Fish"
-        },
-        carbonhydrate : {
-            rice : "Rice",
-            yam : "Yam",
-            indomie : "Noodles"
-        },
-        junks :{
-            biscuits : "Biscuit",
-            doughnut : "Doughnut",
-            chips : "Plaintain-chips"
-        },
-        drinks :{
-            water : "Water",
-            heinaken : "Heinaken",
-            beveraga : "Tea"
-        }
-    },
-    {
-        foodId : 3,
-        protein : {
-            beans : "Beans",
-            egg : "Egg",
-            fish: "Fish"
-        },
-        carbonhydrate : {
-            rice : "Rice",
-            yam : "Yam",
-            indomie : "Noodles"
-        },
-        junks :{
-            biscuits : "Biscuit",
-            doughnut : "Doughnut",
-            chips : "Plaintain-chips"
-        },
-        drinks :{
-            water : "Water",
-            heinaken : "Heinaken",
-            beveraga : "Tea"
-        }
-    },
-    {
-        foodId : 4,
-        protein : {
-            beans : "Beans",
-            egg : "Egg",
-            fish: "Fish"
-        },
-        carbonhydrate : {
-            rice : "Rice",
-            yam : "Yam",
-            indomie : "Noodles"
-        },
-        junks :{
-            biscuits : "Biscuit",
-            doughnut : "Doughnut",
-            chips : "Plaintain-chips"
-        },
-        drinks :{
-            water : "Water",
-            heinaken : "Heinaken",
-            beveraga : "Tea"
-        }
-    },
-    {
-        foodId : 5,
-        protein : {
-            beans : "Beans",
-            egg : "Egg",
-            fish: "Fish"
-        },
-        carbonhydrate : {
-            rice : "Rice",
-            yam : "Yam",
-            indomie : "Noodles"
-        },
-        junks :{
-            biscuits : "Biscuit",
-            doughnut : "Doughnut",
-            chips : "Plaintain-chips"
-        },
-        drinks :{
-            water : "Water",
-            heinaken : "Heinaken",
-            beveraga : "Tea"
-        } 
-    }
-]
+export class AssignmentComponent implements OnInit {
+// foodData file (as an array of Obj) in data/food
+foods: any[] = foodData;
 
 constructor(){}
 
+  onDelete(elem: any) {
+    this.foods.forEach((row: any, index: any) => {
+      if(row === elem) {
+        this.foods.splice(index, 1);
+        console.log(`You deleted row>> ${row.foodId}`)
+      }
+    })
+  }
+
+  // New Delete Methods - works! 
+  // onDelete(elem: any) {
+  //   let index = this.foods.indexOf(elem);
+  //   this.foods.splice(index, 1)
+  // }
 
   ngOnInit(): void {
     console.log('Food Array>>', this.foods);

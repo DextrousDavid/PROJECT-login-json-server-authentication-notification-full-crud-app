@@ -1,0 +1,28 @@
+{
+  "posts": [
+    {
+      "firstName": "Pauline",
+      "lastName": "Aimakhede",
+      "address": "31, chinedum street, araromi, ikorodu",
+      "phoneNumber": "08102766229",
+      "gender": "female",
+      "id": 4
+    },
+    {
+      "firstName": "David",
+      "lastName": "Aimakhede",
+      "address": "31, chinedum street, araromi, ikorodu",
+      "phoneNumber": "+2348166554021",
+      "gender": "male",
+      "id": 7
+    },
+    {
+      "firstName": "David",
+      "lastName": "Aimakhede",
+      "address": "31, chinedum street, araromi, ikorodu",
+      "phoneNumber": "+2348166554021",
+      "gender": "male",
+      "id": 8
+    }
+  ]
+}

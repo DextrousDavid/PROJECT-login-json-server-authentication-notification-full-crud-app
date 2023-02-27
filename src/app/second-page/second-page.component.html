@@ -7,22 +7,21 @@
             <th>Gender</th>
             <th>Phone Number</th>
             <th>Address</th>
-            <th></th>
-            <th></th>
+            <th>Edit</th>
+            <th>Delete</th>
         </tr>
     </thead>
     <tbody>
         <tr *ngFor="let user of users; let id = index"> 
-            <td>{{id + 1}}</td>
+            <td>{{user.id}}</td>
             <td>{{user.firstName}}</td>
             <td>{{user.lastName}}</td>
             <td>{{user.gender}}</td>
             <td>{{user.phoneNumber}}</td>
             <td>{{user.address}}</td>
-            <td><button class="edit-row-button" (click)="routeToEditPage(user)">Edit</button>
+            <td><button class="edit-row-button" (click)="routeToEditPage(user)"><i class="fa fa-edit" style="font-size:15px"></i></button>
             </td>
-            <td><button class="delete-row-button" (click)="onDelete(user)">X</button>
-            </td>
+            <td><button class="delete-row-button" (click)="onDelete(user.id)"><i class="fa fa-trash" style="font-size:15px"></i></button>
         </tr><!-- and so on... --->
         <br>
         <button (click)="routeToFirstPage()" class="btnSubmit padding-bottom--24">Go back</button>

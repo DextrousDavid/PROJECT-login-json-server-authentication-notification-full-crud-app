@@ -14,6 +14,7 @@ export class EditComponent {
   userForm!: FormGroup;
   users: User[] | any = [];
   userInterface: UserInterface = {
+    id: 0,
     firstName: '',
     lastName: '',
     address: '',
@@ -35,12 +36,26 @@ export class EditComponent {
 
 // routes you to Edit page
 routeToFirstPage() {
-  this.router.navigate(['/firstPage/edit']);
+  this.router.navigate(['/firstPage/first']);
+  console.log('route to First Page clicked');
 }
 
 // Posts edit form Post
 formPost() {
-  console.log('Submited form from Edit>>',this.userForm.value)
+ if(this.userForm.valid){
+  this.userInterface = this.userForm.value;
+  this.service.editFormValues(this.userInterface, this.userInterface.id).subscribe({
+    next: (res: any) => {
+      console.log("response>>", res);
+      this.router.navigateByUrl("/secondPage/second");
+    },
+    error: (error: any) => {
+      console.error("error from API>>", error)
+    },
+    complete: () => console.info("Put Request!!!")
+  })
+ }
+
   // console.log('You submitted the Edit form>>', this.users);
 }
 

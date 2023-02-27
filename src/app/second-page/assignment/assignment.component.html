@@ -6,28 +6,43 @@
             <th>Drinks</th>
             <th>Junks</th>
             <th>Protein</th>
-            <th></th>
-            <th></th>
+            <th>Edit</th>
+            <th>Delete</th>
         </tr>
     </thead>
     <tbody>
-        <tr> 
-        <!-- <tr *ngFor="let food of foods; let id = index">
-            <td>{{id + 1}}</td>
+        <tr>
+        <tr *ngFor="let food of foods; index as id">
             <td>{{food.foodId}}</td>
-            <td>{{food.carbonhydrate}}</td>
-            <td>{{food.drinks}}</td>
-            <td>{{food.junks.biscuits}}</td>
-            <td>{{food.protein.beans}}</td>
-            <td><button class="edit-row-button">Edit</button> -->
-            <!-- <td><button class="edit-row-button" (click)="routeToEditPage(user)">Edit</button> -->
-            <!-- </td> -->
-            <!-- <td><button class="delete-row-button" (click)="onDelete(user)">X</button> -->
-            <!-- <td><button class="delete-row-button">X</button> -->
-            <!-- </td> -->
-        <!-- </tr> -->
+            <td>
+                <div>{{food.carbonhydrate.indomie}}</div>
+                <div>{{food.carbonhydrate.rice}}</div>
+                <div>{{food.carbonhydrate.yam}}</div>
+            </td>
+            <td>
+                <div>{{food.drinks.beveraga}}</div>
+                <div>{{food.drinks.heinaken}}</div>
+                <div>{{food.drinks.water}}</div>
+
+            </td>
+            <td>
+                <div>{{food.junks.biscuits}}</div>
+                <div>{{food.junks.doughnut}}</div>
+                <div>{{food.junks.chips}}</div>
+            </td>
+            <td>
+                <div>{{food.protein.beans}}</div>
+                <div>{{food.protein.egg}}</div>
+                <div>{{food.protein.fish}}</div>
+            </td>
+            <td><button class="edit-row-button"><i class="fa fa-edit" style="font-size:15px"></i></button>
+            </td>
+            <td><button class="delete-row-button" (click)="onDelete(food)"><i class="fa fa-trash" style="font-size:15px"></i></button>
+            </td>
+        </tr>
         <br>
         <button class="btnSubmit padding-bottom--24">Go back</button>
         <!-- <button (click)="routeToFirstPage()" class="btnSubmit padding-bottom--24">Go back</button> -->
     </tbody>
 </table><br>
+
