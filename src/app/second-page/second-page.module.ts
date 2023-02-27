@@ -3,11 +3,13 @@ import { CommonModule } from '@angular/common';
 
 import { SecondPageRoutingModule } from './second-page-routing.module';
 import { SecondPageComponent } from './second-page.component';
+import { AssignmentComponent } from './assignment/assignment.component';
 
 
 @NgModule({
   declarations: [
-    SecondPageComponent
+    SecondPageComponent,
+    AssignmentComponent
   ],
   imports: [
     CommonModule,

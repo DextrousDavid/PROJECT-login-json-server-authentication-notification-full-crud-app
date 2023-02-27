@@ -61,7 +61,7 @@ export class SecondPageComponent implements OnInit {
 
     // stores the value of this.services.allUsers in this.users 
     this.users = this.service.allUsers;
-    console.log("All Users, second-page>>",this.users);
+    console.log("All Users, second-page>>", this.users);
 
   }
 

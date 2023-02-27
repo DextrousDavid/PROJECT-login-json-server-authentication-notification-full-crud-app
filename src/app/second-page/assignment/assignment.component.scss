@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+.styled-table {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    font-family: Poppins, sans-serif;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.styled-table thead tr {
+    background-color: #009879;
+    color: #ffffff;
+    text-align: left;
+}
+
+.styled-table th,
+.styled-table td {
+    padding: 12px 15px;
+}
+
+.styled-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.styled-table tbody tr:last-of-type {
+    border-bottom: 2px solid #009879;
+}
+
+.styled-table tbody tr.active-row {
+    font-weight: bold;
+    color: #009879;
+}
+
+.btnSubmit {
+    font-size: 16px;
+    line-height: 28px;
+    padding: 8px 16px;
+    width: 100%;
+    min-height: 44px;
+    border: unset;
+    color: #ffffff;
+    border-radius: 4px;
+    outline-color: rgb(84 105 212 / 0.5);
+    background-color: #009879;
+    box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px,
+        rgba(0, 0, 0, 0) 0px 0px 0px 0px,
+        rgba(0, 0, 0, 0) 0px 0px 0px 0px,
+        rgba(60, 66, 87, 0.16) 0px 0px 0px 1px,
+        rgba(0, 0, 0, 0) 0px 0px 0px 0px,
+        rgba(0, 0, 0, 0) 0px 0px 0px 0px,
+        rgba(0, 0, 0, 0) 0px 0px 0px 0px;
+}
+
+
+.delete-row-button {
+    font-size: 16px;
+    padding: 8px 8px;
+    width: 80%;
+    margin-top: 5px;
+    margin-left: 10px;
+    border: unset;
+    color: #ffffff;
+    border-radius: 4px;
+    background-color: #ec1414;
+    outline: #fff;
+}
+
+.delete-row-button:hover {
+    cursor: pointer;
+    background-color: #a90303;
+}
+.edit-row-button {
+    font-size: 16px;
+    padding: 8px 8px;
+    width: 80%;
+    margin-top: 5px;
+    margin-left: 10px;
+    border: unset;
+    color: #ffffff;
+    border-radius: 4px;
+    background-color: #d3b106;
+    outline: #fff;
+}
+
+.edit-row-button:hover {
+    background-color: #b4970a;
+    cursor: pointer;
+}
+
+button:hover {
+    cursor: pointer;
+}
