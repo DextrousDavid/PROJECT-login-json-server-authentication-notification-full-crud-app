@@ -1,28 +1,166 @@
 {
   "posts": [
     {
-      "firstName": "Pauline",
-      "lastName": "Aimakhede",
-      "address": "31, chinedum street, araromi, ikorodu",
-      "phoneNumber": "08102766229",
-      "gender": "female",
-      "id": 4
-    },
-    {
-      "firstName": "David",
-      "lastName": "Aimakhede",
-      "address": "31, chinedum street, araromi, ikorodu",
-      "phoneNumber": "+2348166554021",
-      "gender": "male",
+      "customerName": "Emmanuel Moore",
+      "customerAcctNum": "2092837482",
+      "customerEmailAddress": "emmanuelmoore@gmail.com",
+      "customerAcctType": "Current Account",
+      "customerAge": "43",
+      "reasonForComplaint": "Internet banking restriction",
       "id": 7
     },
     {
-      "firstName": "David",
-      "lastName": "Aimakhede",
-      "address": "31, chinedum street, araromi, ikorodu",
-      "phoneNumber": "+2348166554021",
-      "gender": "male",
-      "id": 8
+      "id": 8,
+      "customerName": "Benson Potter",
+      "customerAcctNum": "2039249434",
+      "customerEmailAddress": "bensonkohekni@nedoz.com",
+      "customerAcctType": "Current Account",
+      "customerAge": "23",
+      "reasonForComplaint": "Failed internation transfer!"
+    },
+    {
+      "id": 11,
+      "customerName": "Ugochi Amajoh",
+      "customerAcctNum": "2109097534",
+      "customerEmailAddress": "ugochi amajoh",
+      "customerAcctType": "Current Account",
+      "customerAge": "26",
+      "reasonForComplaint": "Too much fund! smile.."
+    },
+    {
+      "customerName": "Peter Mark",
+      "customerAcctNum": "0128328323",
+      "customerEmailAddress": "petermark@outlook.com",
+      "customerAcctType": "Savings",
+      "customerAge": "57",
+      "reasonForComplaint": "Invalid Telephone number",
+      "id": 12
+    },
+    {
+      "id": 13,
+      "customerName": "Bright Clinton",
+      "customerAcctNum": "2087876565",
+      "customerEmailAddress": "aadurkohekni@nedoz.com",
+      "customerAcctType": "Domicilliary Account",
+      "customerAge": "18",
+      "reasonForComplaint": "Student account error"
+    },
+    {
+      "id": 15,
+      "customerName": "Simon Blessing",
+      "customerAcctNum": "2093029383",
+      "customerEmailAddress": "akhededavido@gmail.com",
+      "customerAcctType": "Saving",
+      "customerAge": "54",
+      "reasonForComplaint": "Failed transactions.."
+    },
+    {
+      "id": 16,
+      "customerName": "Blessing Sam",
+      "customerAcctNum": "2152625262",
+      "customerEmailAddress": "durkohekni@nedoz.com",
+      "customerAcctType": "Saving",
+      "customerAge": "45",
+      "reasonForComplaint": "Invalid Details..."
+    },
+    {
+      "id": 17,
+      "customerName": "Jasper Roland",
+      "customerAcctNum": "0027362736",
+      "customerEmailAddress": "jasperrow@gmail.com",
+      "customerAcctType": "Domicilliary Account",
+      "customerAge": "34",
+      "reasonForComplaint": "I have an issue with my domicilliary"
+    },
+    {
+      "id": 19,
+      "customerName": "Precious Priscilliala",
+      "customerAcctNum": "2102938293",
+      "customerEmailAddress": "preciouspriscillia@yahoomail.com",
+      "customerAcctType": "Current Account",
+      "customerAge": "44",
+      "reasonForComplaint": "Failed international transfer!"
+    },
+    {
+      "id": 20,
+      "customerName": "Aki Omosewa AO",
+      "customerAcctNum": "2093828482",
+      "customerEmailAddress": "kohekni@nedoz.com",
+      "customerAcctType": "Savings Account",
+      "customerAge": "64",
+      "reasonForComplaint": "Name update"
+    },
+    {
+      "id": 23,
+      "customerName": "Indiana Jones",
+      "customerAcctNum": "2083928374",
+      "customerEmailAddress": "indinajonesy@yahoo.com",
+      "customerAcctType": "Domicilliary Account",
+      "customerAge": "77",
+      "reasonForComplaint": "International Transfer Error"
+    },
+    {
+      "id": 25,
+      "customerName": "Micheal Joseph",
+      "customerAcctNum": "00183727182",
+      "customerEmailAddress": "michealjoseph@outlook.com",
+      "customerAcctType": "Domicilliary Account",
+      "customerAge": "32",
+      "reasonForComplaint": "Pending  Credit alert..."
+    },
+    {
+      "id": 26,
+      "customerName": "Ebenezer  Obi E.O",
+      "customerAcctNum": "2093283421",
+      "customerEmailAddress": "ebenezerobi@gmail.com",
+      "customerAcctType": "Savings Account",
+      "customerAge": "34",
+      "reasonForComplaint": "Dispense Error, please resolve."
+    },
+    {
+      "id": 27,
+      "customerName": "Craig Mitchelle Bella",
+      "customerAcctNum": "2192939392",
+      "customerEmailAddress": "craigm@gmail.com",
+      "customerAcctType": "Savings Account",
+      "customerAge": "32",
+      "reasonForComplaint": "Change of name"
+    },
+    {
+      "customerName": "Emeka Obinna",
+      "customerAcctNum": "2129339320",
+      "customerEmailAddress": "emekaobinna@gmail.com",
+      "customerAcctType": "Savings Account",
+      "customerAge": 43,
+      "reasonForComplaint": "Transfer into a wrong account",
+      "id": 28
+    },
+    {
+      "customerName": "Albert Einstein",
+      "customerAcctNum": "2212738273",
+      "customerEmailAddress": "alberteinstein@ubagroup.com",
+      "customerAcctType": "Domicilliary Account",
+      "customerAge": 87,
+      "reasonForComplaint": "Maximum transfer limiit fix",
+      "id": 29
+    },
+    {
+      "customerName": "Esther Smith",
+      "customerAcctNum": "2018328372",
+      "customerEmailAddress": "ethersmith@outlook.com",
+      "customerAcctType": "Current Account",
+      "customerAge": 25,
+      "reasonForComplaint": "Unable to access uba Mobile App",
+      "id": 30
+    },
+    {
+      "customerName": "Lex Luthur",
+      "customerAcctNum": "0029383772",
+      "customerEmailAddress": "lexluthur@luthercorps.com",
+      "customerAcctType": "Current Account",
+      "customerAge": 58,
+      "reasonForComplaint": "Upgrade to Tier 3 ",
+      "id": 31
     }
   ]
 }

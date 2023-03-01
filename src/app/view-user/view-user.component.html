@@ -1,0 +1,47 @@
+<div id="menu-overlay"></div>
+
+<header id="main-header">
+    <div id="header_logo">
+        <a>Logo</a>
+    </div>
+</header>
+
+<section id="content">
+    <div id="sidenav">
+    </div>
+    <div id="profile-picture">
+        <img src="../../assets/user-icon-jpg-17.jpg" alt="Profile icon.">
+        <h1>Welcome</h1>
+    </div>
+    <header id="content-header">
+        <h2>Customer Details</h2>
+    </header>
+    <div class="main">
+        <div>
+            <h3>Name:</h3>
+            <p>{{userInterface.customerName}}</p>
+        </div>
+        <div>
+            <h3>Account Number</h3>
+            <p>{{userInterface.customerAcctNum}}</p>
+        </div>
+        <div>
+            <h3>Email Address:</h3>
+            <p>{{userInterface.customerEmailAddress}}</p>
+        </div>
+        <div>
+            <h3>Account Type:</h3>
+            <p>{{userInterface.customerAcctType}}</p>
+        </div>
+        <div>
+            <h3>Customer Age:</h3>
+            <p>{{userInterface.customerAge}}</p>
+        </div>
+        <div>
+            <h3>Reason for complaint</h3>
+            <p>{{userInterface.reasonForComplaint}}</p>
+        </div>
+    </div>
+    <button class="edit-view-user" (click)="routeToSecondPage()">Back</button>
+    <button class="edit-view-user" style="margin-left: 15px;" (click)="routeToEditPage()">Edit</button>
+</section>

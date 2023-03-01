@@ -16,11 +16,12 @@ export class FirstPageComponent implements OnInit {
   users: User[] | any = [];
   userInterface: UserInterface = {
     id: 0,
-    firstName: '',
-    lastName: '',
-    address: '',
-    gender: '',
-    phoneNumber: '',
+    customerName: '',
+    customerAcctNum: '',
+    customerEmailAddress: '',
+    customerAcctType: '',
+    customerAge: '',
+    reasonForComplaint: '',
   }
 
   constructor(private router: Router, private route: ActivatedRoute, private service: UserTransmitterService) { }
@@ -33,11 +34,12 @@ export class FirstPageComponent implements OnInit {
 
   formPostInterface() {
     this.userForm = new FormGroup({
-      firstName: new FormControl('', [Validators.required]),
-      lastName: new FormControl('', [Validators.required]),
-      address: new FormControl('', [Validators.required]),
-      phoneNumber: new FormControl('', [Validators.required]),
-      gender: new FormControl('', [Validators.required]),
+      customerName: new FormControl('', [Validators.required]),
+      customerAcctNum: new FormControl('', [Validators.required]),
+      customerEmailAddress: new FormControl('', [Validators.required]),
+      customerAcctType: new FormControl('', [Validators.required]),
+      customerAge: new FormControl('', [Validators.required]),
+      reasonForComplaint: new FormControl('', [Validators.required]),
     })
   }
 

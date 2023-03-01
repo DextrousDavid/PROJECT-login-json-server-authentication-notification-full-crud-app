@@ -13,7 +13,7 @@
 }
 
 .styled-table thead tr {
-    background-color: #009879;
+    background-color: #FF4B2B;
     color: #ffffff;
     text-align: left;
 }
@@ -32,25 +32,26 @@
 }
 
 .styled-table tbody tr:last-of-type {
-    border-bottom: 2px solid #009879;
+    border-bottom: 2px solid #FF4B2B;
 }
 
 .styled-table tbody tr.active-row {
     font-weight: bold;
-    color: #009879;
+    color: #FF4B2B;
 }
 
 .btnSubmit {
     font-size: 16px;
     line-height: 28px;
     padding: 8px 16px;
+    margin-bottom: 4px;
+    margin-left: 4px;
     width: 100%;
     min-height: 44px;
     border: unset;
     color: #ffffff;
     border-radius: 4px;
-    outline-color: rgb(84 105 212 / 0.5);
-    background-color: #009879;
+    background-color: #FF4B2B;
     box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px,
         rgba(0, 0, 0, 0) 0px 0px 0px 0px,
         rgba(0, 0, 0, 0) 0px 0px 0px 0px,
@@ -88,6 +89,19 @@
     color: #ffffff;
     border-radius: 4px;
     background-color: #d3b106;
+    outline: #fff;
+}
+
+.view-row-button {
+    font-size: 16px;
+    padding: 8px 8px;
+    width: 80%;
+    margin-top: 5px;
+    margin-left: 10px;
+    border: unset;
+    color: #ffffff;
+    border-radius: 4px;
+    background-color: #5cc019;
     outline: #fff;
 }
 

@@ -1,19 +1,21 @@
 export class User {
     constructor(
         public id: number | any,
-        public firstName: string,
-        public lastName: string,
-        public address: string,
-        public phoneNumber: string,
-        public gender: string,
+        public customerName: string,
+        public customerAcctNum: string,
+        public customerEmailAddress: string,
+        public customerAcctType: string,
+        public customerAge: string | any,
+        public reasonForComplaint: string,
     ) {}
 }
 
 export interface UserInterface {
     id: number | any
-    firstName: string,
-    lastName: string,
-    address: string,
-    phoneNumber: string,
-    gender: string
+    customerName: string,
+    customerAcctNum: string,
+    customerEmailAddress: string,
+    customerAcctType: string,
+    customerAge: string | any,
+    reasonForComplaint: string,
 }

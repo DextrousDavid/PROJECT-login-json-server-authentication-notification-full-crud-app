@@ -4,32 +4,35 @@
             <div class="formbg-outer">
                 <div class="formbg">
                     <div class="formbg-inner padding-horizontal--48">
-                        <h3 class="padding-bottom--15">Customer Details</h3>
+                        <h3 class="customerDetails padding-bottom--15">Customer Details</h3>
 
                         <form [formGroup]="userForm" (ngSubmit)="formPost()">
                             <div class="field padding-bottom--24">
-                                <label for="fname">First Name</label>
-                                <input type="text" formControlName="firstName">
+                                <label for="lname">Full Name</label>
+                                <input type="text" name="fname" formControlName="customerName">
                             </div>
                             <div class="field padding-bottom--24">
-                                <label for="lname">Last Name</label>
-                                <input type="text" formControlName="lastName">
+                                <label for="lname">Account Number</label>
+                                <input type="text" formControlName="customerAcctNum">
                             </div>
                             <div class="field padding-bottom--24">
-                            <label for="gender">Gender</label>
-                            <select class="field padding-bottom--24" formControlName="gender">
-                                <option value="male">Male</option>
-                                <option value="female">Female</option>
+                                <label for="lname">Email Address</label>
+                                <input type="email" name="email" formControlName="customerEmailAddress">
+                            </div>
+                            <label for="account">Account Type</label>
+                            <select class="field padding-bottom--24" formControlName="customerAcctType">
+                                <option value="Savings Account">Savings Account</option>
+                                <option value="Current Account">Current Account</option>
+                                <option value="Domicilliary Account">Domicilliary Account</option>
                             </select>
+                            <div class="field padding-bottom--24">
+                                <label for="lname">Customer Age</label>
+                                <input type="number" formControlName="customerAge">
                             </div>
-                        <div class="field padding-bottom--24">
-                            <label for="phone">Phone Number</label>
-                            <input type="text" name="phone" formControlName="phoneNumber">
-                        </div>
-                        <div class="field padding-bottom--24">
-                            <label for="address">Address</label>
-                            <input type="text" name="address" formControlName="address">
-                        </div>
+                            <div class="field padding-bottom--24">
+                                <label for="lname">Reason for Complaint</label>
+                                <textarea rows="10" cols="52" formControlName="reasonForComplaint"></textarea>
+                            </div>
                     </form>
                     <button (click)="formPost()" class="btnSubmit padding-bottom--24">Submit</button>
                     <!-- <button (click)="routeToSecondPage()" class="btnSubmit padding-bottom--24">Next</button> -->

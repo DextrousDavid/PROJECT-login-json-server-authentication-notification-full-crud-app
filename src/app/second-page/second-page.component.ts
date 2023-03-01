@@ -26,24 +26,23 @@ export class SecondPageComponent implements OnInit {
     // this.service.setUserProfile(user);
     // this.service.setIsEdit(true);
     localStorage.setItem('id', user.id);
-    localStorage.setItem('firstName', user.firstName);
-    localStorage.setItem('lastName', user.lastName);
-    localStorage.setItem('gender', user.gender);
-    localStorage.setItem('phoneNumber', user.phoneNumber);
-    localStorage.setItem('address', user.address);
+    localStorage.setItem('customerName', user.customerName);
+    localStorage.setItem('customerAcctNum', user.customerAcctNum);
+    localStorage.setItem('customerEmailAddress', user.customerEmailAddress);
+    localStorage.setItem('customerAcctType', user.customerAcctType);
+    localStorage.setItem('customerAge', user.customerAge);
+    localStorage.setItem('reasonForComplaint', user.reasonForComplaint);
     this.router.navigate(['/firstPage/edit']);
   }
 
-  //Delete Customer row by id
-  //Splice method
-  // onDelete(elem: any) {
-  //   this.users.forEach((row: any, index: any) => {
-  //     if(row === elem) {
-  //       this.users.splice(index, 1);
-  //     }
-  //   })
-  // }
+  routeToViewUserPage(user: User) {
+    console.log('User>>', user)
+    this.router.navigate([`/view-user/${user.id}`]).then(() => {
+      location.reload();
+    })
 
+  }
+  
   //Get form values
   getFormValues(){
     this.service.getFormAPI().subscribe({
@@ -76,21 +75,6 @@ export class SecondPageComponent implements OnInit {
 
   ngOnInit(): void {
     this.getFormValues();
-    // this.getFormValues$ = this.service.getFormObservable().pipe(debounceTime(200)).subscribe({
-    //   next: (elem: any) => {
-    //     console.log('Form Values 123>>', elem);
-    //     this.users = elem;
-    //     console.log('Table Values>>', this.users);
-    //   },
-    //   error: (error: any) => {
-    //     console.error('Error from API>>', error)
-    //   },
-    //   complete: () => console.info('Form Values have entered the array>>')
-    // });
-
-    // stores the value of this.services.allUsers in this.users 
-    // this.users = this.service.allUsers;
-    // console.log("All Users, second-page>>", this.users);
 
   }
 

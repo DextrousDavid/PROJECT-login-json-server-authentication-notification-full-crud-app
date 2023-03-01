@@ -16,11 +16,12 @@ export class UserTransmitterService {
   isEdit: boolean = false;
   user: UserInterface = {
     id: 0,
-    firstName: '',
-    lastName: '',
-    gender: '',
-    address: '',
-    phoneNumber: '',
+    customerName: '',
+    customerAcctNum: '',
+    customerEmailAddress: '',
+    customerAcctType: '',
+    customerAge: '',
+    reasonForComplaint: '',
   }
   baseUrl: string = "http://localhost:3000/posts";
   
@@ -40,6 +41,18 @@ export class UserTransmitterService {
     return this.http.get<any>(formAPI).pipe(map((response:any) => {
       return response;
     }));
+  }
+
+  public getUserById(id: string | null):Observable<any> {
+    let getParams: any = localStorage.getItem('paramValue');
+    let paramResult = JSON.parse(getParams);
+    id = paramResult;
+    
+    const getByIdApi = `${this.baseUrl}/${id}`
+    console.log('Get by id Api>>', getByIdApi);
+    return this.http.get<any>(getByIdApi).pipe(map((response: any) => {
+      return response
+    }))
   }
 
   // Edit form value (row)

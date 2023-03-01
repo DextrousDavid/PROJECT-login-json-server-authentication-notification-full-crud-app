@@ -271,6 +271,15 @@ a.ssolink {
     animation: animationLeftRight 4s ease-in-out infinite;
 }
 
+.back-to-view-user-btn {
+    color: #FF4B2B;
+    margin-top: 5px;
+}
+
+.back-to-view-user-btn:hover {
+    cursor: pointer;
+}
+
 @keyframes animationLeftRight {
     0% {
         transform: translateX(0px);
