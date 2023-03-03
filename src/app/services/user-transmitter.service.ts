@@ -31,7 +31,7 @@ export class UserTransmitterService {
   public createFormAPI(user: UserInterface): Observable<any>{
     const formAPI = `${this.baseUrl}`;
     return this.http.post<any>(formAPI, user).pipe(map((response: any) => {
-      return response
+      return response;
     }));
   }
 

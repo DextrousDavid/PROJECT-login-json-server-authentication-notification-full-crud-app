@@ -14,6 +14,9 @@ export class SecondPageComponent implements OnInit {
 
   getFormValues$!: Subscription;
   users: User[] | any = [];
+  searchText: any = '';
+
+  p: number = 1;
   constructor(private router: Router, private route: ActivatedRoute, private service: UserTransmitterService) {}
   
   // routes you to first page

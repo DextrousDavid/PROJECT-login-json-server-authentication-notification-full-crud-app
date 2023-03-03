@@ -1,43 +1,16 @@
 {
   "posts": [
     {
-      "customerName": "Emmanuel Moore",
-      "customerAcctNum": "2092837482",
-      "customerEmailAddress": "emmanuelmoore@gmail.com",
-      "customerAcctType": "Current Account",
-      "customerAge": "43",
-      "reasonForComplaint": "Internet banking restriction",
-      "id": 7
+      "id": 1,
+      "customerName": "Johnson Mary",
+      "customerAcctNum": "2222732938",
+      "customerEmailAddress": "johnsonmary@nedoz.com",
+      "customerAcctType": "Domicilliary Account",
+      "customerAge": "18",
+      "reasonForComplaint": "Name update"
     },
     {
-      "id": 8,
-      "customerName": "Benson Potter",
-      "customerAcctNum": "2039249434",
-      "customerEmailAddress": "bensonkohekni@nedoz.com",
-      "customerAcctType": "Current Account",
-      "customerAge": "23",
-      "reasonForComplaint": "Failed internation transfer!"
-    },
-    {
-      "id": 11,
-      "customerName": "Ugochi Amajoh",
-      "customerAcctNum": "2109097534",
-      "customerEmailAddress": "ugochi amajoh",
-      "customerAcctType": "Current Account",
-      "customerAge": "26",
-      "reasonForComplaint": "Too much fund! smile.."
-    },
-    {
-      "customerName": "Peter Mark",
-      "customerAcctNum": "0128328323",
-      "customerEmailAddress": "petermark@outlook.com",
-      "customerAcctType": "Savings",
-      "customerAge": "57",
-      "reasonForComplaint": "Invalid Telephone number",
-      "id": 12
-    },
-    {
-      "id": 13,
+      "id": 2,
       "customerName": "Bright Clinton",
       "customerAcctNum": "2087876565",
       "customerEmailAddress": "aadurkohekni@nedoz.com",
@@ -46,43 +19,7 @@
       "reasonForComplaint": "Student account error"
     },
     {
-      "id": 15,
-      "customerName": "Simon Blessing",
-      "customerAcctNum": "2093029383",
-      "customerEmailAddress": "akhededavido@gmail.com",
-      "customerAcctType": "Saving",
-      "customerAge": "54",
-      "reasonForComplaint": "Failed transactions.."
-    },
-    {
-      "id": 16,
-      "customerName": "Blessing Sam",
-      "customerAcctNum": "2152625262",
-      "customerEmailAddress": "durkohekni@nedoz.com",
-      "customerAcctType": "Saving",
-      "customerAge": "45",
-      "reasonForComplaint": "Invalid Details..."
-    },
-    {
-      "id": 17,
-      "customerName": "Jasper Roland",
-      "customerAcctNum": "0027362736",
-      "customerEmailAddress": "jasperrow@gmail.com",
-      "customerAcctType": "Domicilliary Account",
-      "customerAge": "34",
-      "reasonForComplaint": "I have an issue with my domicilliary"
-    },
-    {
-      "id": 19,
-      "customerName": "Precious Priscilliala",
-      "customerAcctNum": "2102938293",
-      "customerEmailAddress": "preciouspriscillia@yahoomail.com",
-      "customerAcctType": "Current Account",
-      "customerAge": "44",
-      "reasonForComplaint": "Failed international transfer!"
-    },
-    {
-      "id": 20,
+      "id": 3,
       "customerName": "Aki Omosewa AO",
       "customerAcctNum": "2093828482",
       "customerEmailAddress": "kohekni@nedoz.com",
@@ -91,7 +28,7 @@
       "reasonForComplaint": "Name update"
     },
     {
-      "id": 23,
+      "id": 4,
       "customerName": "Indiana Jones",
       "customerAcctNum": "2083928374",
       "customerEmailAddress": "indinajonesy@yahoo.com",
@@ -100,25 +37,16 @@
       "reasonForComplaint": "International Transfer Error"
     },
     {
-      "id": 25,
+      "id": 5,
       "customerName": "Micheal Joseph",
       "customerAcctNum": "00183727182",
       "customerEmailAddress": "michealjoseph@outlook.com",
       "customerAcctType": "Domicilliary Account",
       "customerAge": "32",
-      "reasonForComplaint": "Pending  Credit alert..."
+      "reasonForComplaint": "Pending  Credit alert"
     },
     {
-      "id": 26,
-      "customerName": "Ebenezer  Obi E.O",
-      "customerAcctNum": "2093283421",
-      "customerEmailAddress": "ebenezerobi@gmail.com",
-      "customerAcctType": "Savings Account",
-      "customerAge": "34",
-      "reasonForComplaint": "Dispense Error, please resolve."
-    },
-    {
-      "id": 27,
+      "id": 6,
       "customerName": "Craig Mitchelle Bella",
       "customerAcctNum": "2192939392",
       "customerEmailAddress": "craigm@gmail.com",
@@ -127,13 +55,13 @@
       "reasonForComplaint": "Change of name"
     },
     {
-      "customerName": "Emeka Obinna",
+      "id": 7,
+      "customerName": "Emeka Obinna Chukwu",
       "customerAcctNum": "2129339320",
       "customerEmailAddress": "emekaobinna@gmail.com",
       "customerAcctType": "Savings Account",
-      "customerAge": 43,
-      "reasonForComplaint": "Transfer into a wrong account",
-      "id": 28
+      "customerAge": "43",
+      "reasonForComplaint": "Transfer into a wrong account"
     },
     {
       "customerName": "Albert Einstein",
@@ -142,16 +70,7 @@
       "customerAcctType": "Domicilliary Account",
       "customerAge": 87,
       "reasonForComplaint": "Maximum transfer limiit fix",
-      "id": 29
-    },
-    {
-      "customerName": "Esther Smith",
-      "customerAcctNum": "2018328372",
-      "customerEmailAddress": "ethersmith@outlook.com",
-      "customerAcctType": "Current Account",
-      "customerAge": 25,
-      "reasonForComplaint": "Unable to access uba Mobile App",
-      "id": 30
+      "id": 8
     },
     {
       "customerName": "Lex Luthur",
@@ -160,7 +79,88 @@
       "customerAcctType": "Current Account",
       "customerAge": 58,
       "reasonForComplaint": "Upgrade to Tier 3 ",
-      "id": 31
+      "id": 9
+    },
+    {
+      "id": 10,
+      "customerName": "James Cameron",
+      "customerAcctNum": "0021823823",
+      "customerEmailAddress": "jamescaron@gmail.com",
+      "customerAcctType": "Domicilliary Account",
+      "customerAge": "78",
+      "reasonForComplaint": "Invalid Account Statement\n"
+    },
+    {
+      "id": 11,
+      "customerName": "Gabriel Arnold P.",
+      "customerAcctNum": "2073028374",
+      "customerEmailAddress": "gabrielarnold@gmail.com",
+      "customerAcctType": "Savings Account",
+      "customerAge": "67",
+      "reasonForComplaint": "Dispense Error"
+    },
+    {
+      "customerName": "Richard Cypher",
+      "customerAcctNum": "2183928374",
+      "customerEmailAddress": "richardcypher@gmail.com",
+      "customerAcctType": "Savings Account",
+      "customerAge": 57,
+      "reasonForComplaint": "Unable to sign in to Mobile App",
+      "id": 12
+    },
+    {
+      "customerName": "Benson Kennedy",
+      "customerAcctNum": "2192948298",
+      "customerEmailAddress": "bensonkennedy@yahoomail.com",
+      "customerAcctType": "Current Account",
+      "customerAge": 46,
+      "reasonForComplaint": "Dispense Error",
+      "id": 13
+    },
+    {
+      "id": 14,
+      "customerName": "Jonah Jonathan",
+      "customerAcctNum": "2023829374",
+      "customerEmailAddress": "jonahjones@gmail.com",
+      "customerAcctType": "Savings Account",
+      "customerAge": "44",
+      "reasonForComplaint": "Unable to sign in to Mobile App"
+    },
+    {
+      "customerName": "Smith Samantha",
+      "customerAcctNum": "2100893474",
+      "customerEmailAddress": "smithsamantha@gmail.com",
+      "customerAcctType": "Savings Account",
+      "customerAge": 34,
+      "reasonForComplaint": "Dispense Error",
+      "id": 15
+    },
+    {
+      "customerName": "Emmanuel Ekama ",
+      "customerAcctNum": "2293849844",
+      "customerEmailAddress": "emmanuelekama@yahoomail.com",
+      "customerAcctType": "Savings Account",
+      "customerAge": 27,
+      "reasonForComplaint": "No SMS alerts",
+      "id": 16
+    },
+    {
+      "customerName": "Timothy Benedict",
+      "customerAcctNum": "2083728362",
+      "customerEmailAddress": "timothybenedict@gmail.com",
+      "customerAcctType": "Current Account",
+      "customerAge": 26,
+      "reasonForComplaint": "Dispense Error",
+      "id": 17
+    },
+    {
+      "customerName": "Jasper Roland J.",
+      "customerAcctNum": "0028392800",
+      "customerEmailAddress": "jasperj@gmail.com",
+      "customerAcctType": "Domicilliary Account",
+      "customerAge": 54,
+      "reasonForComplaint": "Dispense error",
+      "id": 18
     }
   ]
 }

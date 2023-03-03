@@ -1,3 +1,10 @@
+<div class="center">
+    <input class="searchBtn" type="text" placeholder="Search..." [(ngModel)]="searchText">
+    <!-- Don't put input within a form if you want the search**pipe to work -->
+    <!-- check search.pipe.ts -->
+    <button class="fa fa-search" type="submit"></button>
+</div>
+
 <table class="styled-table">
     <thead>
         <tr>
@@ -14,7 +21,8 @@
         </tr>
     </thead>
     <tbody>
-        <tr *ngFor="let user of users; let id = index"> 
+        <tr
+            *ngFor="let user of users | paginate: { itemsPerPage: 15, currentPage: p } | search: searchText; let id = index">
             <td>{{user.id}}</td>
             <td>{{user.customerName}}</td>
             <td>{{user.customerAcctNum}}</td>
@@ -22,12 +30,20 @@
             <td>{{user.customerAcctType}}</td>
             <td>{{user.customerAge}}</td>
             <td>{{user.reasonForComplaint}}</td>
-            <td><button class="view-row-button" (click)="routeToViewUserPage(user)"><i class="fa fa-eye" style="font-size:15px"></i></button>
-            <td><button class="edit-row-button" (click)="routeToEditPage(user)"><i class="fa fa-edit" style="font-size:15px"></i></button>
+            <td><button class="view-row-button" (click)="routeToViewUserPage(user)"><i class="fa fa-eye"
+                        style="font-size:15px"></i></button>
+            <td><button class="edit-row-button" (click)="routeToEditPage(user)"><i class="fa fa-edit"
+                        style="font-size:15px"></i></button>
             </td>
-            <td><button class="delete-row-button" (click)="onDelete(user.id)"><i class="fa fa-trash" style="font-size:15px"></i></button>
+            <td><button class="delete-row-button" (click)="onDelete(user.id)"><i class="fa fa-trash"
+                        style="font-size:15px"></i></button>
         </tr><!-- and so on... --->
         <br>
-        <button (click)="routeToFirstPage()" class="btnSubmit padding-bottom--24">Go back</button>
+        <div>
+            <button (click)="routeToFirstPage()" class="btnSubmit padding-bottom--24">Go back</button>
+        </div>
     </tbody>
-</table><br>
+</table>
+<div class="center">
+    <pagination-controls (pageChange)="p = $event"></pagination-controls>
+</div>

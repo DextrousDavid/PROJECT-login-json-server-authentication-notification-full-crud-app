@@ -11,7 +11,7 @@ export class User {
 }
 
 export interface UserInterface {
-    id: number | any
+    id: number | any,
     customerName: string,
     customerAcctNum: string,
     customerEmailAddress: string,
