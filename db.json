@@ -6,7 +6,7 @@
       "customerAcctNum": "2222732938",
       "customerEmailAddress": "johnsonmary@nedoz.com",
       "customerAcctType": "Domicilliary Account",
-      "customerAge": "18",
+      "customerAge": "40",
       "reasonForComplaint": "Name update"
     },
     {
@@ -92,7 +92,7 @@
     },
     {
       "id": 11,
-      "customerName": "Gabriel Arnold P.",
+      "customerName": "Gabriel Arnold",
       "customerAcctNum": "2073028374",
       "customerEmailAddress": "gabrielarnold@gmail.com",
       "customerAcctType": "Savings Account",
