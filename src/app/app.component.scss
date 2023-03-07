@@ -262,6 +262,17 @@
     z-index: -10;
     width: 1920px;
   }
+
+  .logout-btn {
+    margin-right: 2rem;
+    border: 2px solid;
+    border-radius: 33px;
+    padding: 6px;
+  }
+
+  .logout-btn:hover {
+    cursor: pointer;
+  }
   
   /* Responsive Styles */
   @media screen and (max-width: 767px) {

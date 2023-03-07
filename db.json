@@ -1,15 +1,6 @@
 {
   "posts": [
     {
-      "id": 3,
-      "customerName": "Aki Omosewa AO",
-      "customerAcctNum": "2093828482",
-      "customerEmailAddress": "kohekni@nedoz.com",
-      "customerAcctType": "Savings Account",
-      "customerAge": "64",
-      "reasonForComplaint": "Name update"
-    },
-    {
       "id": 4,
       "customerName": "Indiana Jones",
       "customerAcctNum": "2083928374",
@@ -154,13 +145,13 @@
       "reasonForComplaint": "Frozen Account"
     },
     {
-      "customerName": "Indiana Jones",
-      "customerAcctNum": "0293909382",
-      "customerEmailAddress": "durkohekni@nedoz.com",
-      "customerAcctType": "Current Account",
-      "customerAge": 32,
-      "reasonForComplaint": "Invalid details",
-      "id": 21
+      "customerName": "Johny Bravo",
+      "customerAcctNum": "0032848273",
+      "customerEmailAddress": "johnybravo@gmail.com",
+      "customerAcctType": "Savings Account",
+      "customerAge": "37",
+      "reasonForComplaint": "Invalid BVN",
+      "id": 22
     }
   ]
 }
