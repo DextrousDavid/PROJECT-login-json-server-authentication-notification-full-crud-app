@@ -22,8 +22,8 @@
     </thead>
     <tbody>
         <tr
-            *ngFor="let user of users | paginate: { itemsPerPage: 15, currentPage: p } | search: searchText; let id = index">
-            <td>{{user.id}}</td>
+            *ngFor="let user of users | paginate: { itemsPerPage: 10, currentPage: p } | search: searchText; let id = index">
+            <td>{{id + 1}}</td>
             <td>{{user.customerName}}</td>
             <td>{{user.customerAcctNum}}</td>
             <td>{{user.customerEmailAddress}}</td>

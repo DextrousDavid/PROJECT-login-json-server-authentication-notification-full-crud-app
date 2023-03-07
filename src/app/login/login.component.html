@@ -18,10 +18,10 @@
 		<form [formGroup]="userFormTwo" (ngSubmit)="routeToFirstPage()">
 			<h1>Sign in</h1>
 			<span>or use your account</span>
-			<input type="email" placeholder="Email" formControlName="customerEmailAddress"/>
+			<input type="email" placeholder="Email" formControlName="customerEmailAddress"/><br>
 			<input type="password" placeholder="Password" formControlName="customerPassword" />
 			<div style="margin-top: 10px;">
-			<a class="sign-in-btn" (click)="routeToFirstPage()">Sign in</a>
+			<a class="sign-in-btn" (click)="routeToFirstPage()"> Login</a>
 			</div>
 		</form>
 	</div>
@@ -33,7 +33,7 @@
 				<button class="ghost" id="signIn">Sign In</button>
 			</div>
 			<div class="overlay-panel overlay-right">
-				<h1>Hello, Friend!</h1>
+				<h1>Hello, Lazy module!</h1>
 				<p>Please sign in with your email and password to proceed.</p>
 				<!-- <button class="ghost" id="signUp">Sign Up</button> -->
 			</div>

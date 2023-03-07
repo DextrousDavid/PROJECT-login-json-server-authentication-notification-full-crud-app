@@ -1,6 +1,24 @@
 {
   "posts": [
     {
+      "id": 1,
+      "customerName": "Johnson Mary",
+      "customerAcctNum": "2222732938",
+      "customerEmailAddress": "johnsonmary@nedoz.com",
+      "customerAcctType": "Domicilliary Account",
+      "customerAge": "40",
+      "reasonForComplaint": "Name update"
+    },
+    {
+      "id": 2,
+      "customerName": "Bright Clinton",
+      "customerAcctNum": "2087876565",
+      "customerEmailAddress": "aadurkohekni@nedoz.com",
+      "customerAcctType": "Domicilliary Account",
+      "customerAge": "18",
+      "reasonForComplaint": "Student account error"
+    },
+    {
       "id": 3,
       "customerName": "Aki Omosewa AO",
       "customerAcctNum": "2093828482",
@@ -55,6 +73,15 @@
       "id": 8
     },
     {
+      "customerName": "Lex Luthur",
+      "customerAcctNum": "0029383772",
+      "customerEmailAddress": "lexluthur@luthercorps.com",
+      "customerAcctType": "Current Account",
+      "customerAge": 58,
+      "reasonForComplaint": "Upgrade to Tier 3 ",
+      "id": 9
+    },
+    {
       "id": 10,
       "customerName": "James Cameron",
       "customerAcctNum": "0021823823",
@@ -62,15 +89,6 @@
       "customerAcctType": "Domicilliary Account",
       "customerAge": "78",
       "reasonForComplaint": "Invalid Account Statement\n"
-    },
-    {
-      "id": 11,
-      "customerName": "Gabriel Arnold",
-      "customerAcctNum": "2073028374",
-      "customerEmailAddress": "gabrielarnold@gmail.com",
-      "customerAcctType": "Savings Account",
-      "customerAge": "67",
-      "reasonForComplaint": "Dispense Error"
     },
     {
       "customerName": "Richard Cypher",
@@ -134,33 +152,6 @@
       "customerAge": 54,
       "reasonForComplaint": "Dispense error",
       "id": 18
-    },
-    {
-      "customerName": "Edegwa Joseph",
-      "customerAcctNum": "2293938944",
-      "customerEmailAddress": "edegwajoseph@outlook.com",
-      "customerAcctType": "Current Account",
-      "customerAge": 34,
-      "reasonForComplaint": "Frozen account",
-      "id": 19
-    },
-    {
-      "id": 20,
-      "customerName": "Jasper Aaron",
-      "customerAcctNum": "2093938483",
-      "customerEmailAddress": "jaspseraaron@hotmail.com",
-      "customerAcctType": "Current Account",
-      "customerAge": "74",
-      "reasonForComplaint": "Frozen Account"
-    },
-    {
-      "customerName": "Indiana Jones",
-      "customerAcctNum": "0293909382",
-      "customerEmailAddress": "durkohekni@nedoz.com",
-      "customerAcctType": "Current Account",
-      "customerAge": 32,
-      "reasonForComplaint": "Invalid details",
-      "id": 21
     }
   ]
 }
