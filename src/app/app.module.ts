@@ -8,6 +8,8 @@ import { ViewUserComponent } from './view-user/view-user.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { NgxPaginationModule } from 'ngx-pagination';
 import { ToastrModule } from 'ngx-toastr';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 
 
 
@@ -22,6 +24,7 @@ import { ToastrModule } from 'ngx-toastr';
     HttpClientModule,
     ReactiveFormsModule,
     NgxPaginationModule,
+    BrowserAnimationsModule,
     ToastrModule.forRoot({
       timeOut: 3500,
       positionClass: 'toast-bottom-right',
