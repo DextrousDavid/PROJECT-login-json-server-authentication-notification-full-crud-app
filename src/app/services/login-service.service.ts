@@ -32,7 +32,7 @@ export class LoginServiceService {
   }
 
   loginUser({customerEmailAddress, customerPassword}: any): Observable<any>{
-    if(customerEmailAddress === 'aimakhededavido@gmail.com' && customerPassword === 'davidsunday') {
+    if(customerEmailAddress === 'aimakhededavido@gmail.com' && customerPassword === 'Davidsunday123!') {
       this.setUserToken('veqi3p9h2Uae6xBfWHbd')
       return of(
         {

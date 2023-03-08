@@ -7,35 +7,109 @@
                         <h3 class="customerDetails padding-bottom--15">Customer Details</h3>
 
                         <form [formGroup]="userForm" (ngSubmit)="formPost()">
+
                             <div class="field padding-bottom--24">
                                 <label for="lname">Full Name</label>
                                 <input type="text" name="fname" formControlName="customerName">
+                                <span
+                                    *ngIf="userForm.get('customerName')?.invalid && (userForm.get('customerName')?.touched || userForm.get('customerName')?.dirty)">
+                                    <small class="text-danger"
+                                        *ngIf="userForm.get('customerName')?.errors?.['required']">
+                                        *This is a required field
+                                    </small>
+                                </span>
                             </div>
+
                             <div class="field padding-bottom--24">
                                 <label for="lname">Account Number</label>
                                 <input type="text" formControlName="customerAcctNum">
+                                <span
+                                    *ngIf="userForm.get('customerAcctNum')?.invalid && (userForm.get('customerAcctNum')?.touched || userForm.get('customerAcctNum')?.dirty)">
+                                    <small class="text-danger"
+                                        *ngIf="userForm.get('customerAcctNum')?.errors?.['required']">
+                                        *This is a required field
+                                    </small>
+                                    <small class="text-danger"
+                                        *ngIf="userForm.get('customerAcctNum')?.errors?.['pattern']">
+                                        *Only numbers are required
+                                    </small>
+                                    <small class="text-danger"
+                                        *ngIf="userForm.get('customerAcctNum')?.errors?.['minlength']">
+                                        *Ten digits </small>
+                                    <small class="text-danger"
+                                        *ngIf="userForm.get('customerAcctNum')?.errors?.['maxlength']">
+                                        *Ten digits
+                                    </small>
+                                </span>
                             </div>
+
                             <div class="field padding-bottom--24">
                                 <label for="lname">Email Address</label>
                                 <input type="email" name="email" formControlName="customerEmailAddress">
+                                <span
+                                    *ngIf="userForm.get('customerEmailAddress')?.invalid && (userForm.get('customerEmailAddress')?.touched || userForm.get('customerEmailAddress')?.dirty) ">
+                                    <small class="text-danger"
+                                        *ngIf="userForm.get('customerEmailAddress')?.errors?.['required']">
+                                        *This is a required field
+                                    </small>
+                                    <small class="text-danger"
+                                        *ngIf="userForm.get('customerEmailAddress')?.errors?.['email']">
+                                        *Please enter a valid email address
+                                    </small>
+                                </span>
                             </div>
+
                             <label for="account">Account Type</label>
                             <select class="field padding-bottom--24" formControlName="customerAcctType">
                                 <option value="Savings Account">Savings Account</option>
                                 <option value="Current Account">Current Account</option>
                                 <option value="Domicilliary Account">Domicilliary Account</option>
                             </select>
+                            <span
+                                *ngIf="userForm.get('customerAcctType')?.invalid && (userForm.get('customerAcctType')?.touched || userForm.get('customerAcctType')?.dirty)">
+                                <small class="text-danger"
+                                    *ngIf="userForm.get('customerAcctType')?.errors?.['required']">
+                                    *This is a required field
+                                </small>
+                            </span>
+
                             <div class="field padding-bottom--24">
                                 <label for="lname">Customer Age</label>
-                                <input type="number" formControlName="customerAge">
+                                <input type="text" formControlName="customerAge">
+                                <span
+                                *ngIf="userForm.get('customerAge')?.invalid && (userForm.get('customerAge')?.touched || userForm.get('customerAge')?.dirty)">
+                                <small class="text-danger"
+                                    *ngIf="userForm.get('customerAge')?.errors?.['required']">
+                                    *This is a required field
+                                </small>
+                                <small class="text-danger"
+                                    *ngIf="userForm.get('customerAge')?.errors?.['pattern']">
+                                    *pattern
+                                </small>
+                                <small class="text-danger"
+                                    *ngIf="userForm.get('customerAge')?.errors?.['min']">
+                                    *Customer must be 18 or above 18years old! </small>
+                                <small class="text-danger"
+                                    *ngIf="userForm.get('customerAge')?.errors?.['max']">
+                                    *Customer must be 75 or below 75years old!
+                                </small>
+                            </span>
                             </div>
+
                             <div class="field padding-bottom--24">
                                 <label for="lname">Reason for Complaint</label>
                                 <textarea rows="10" cols="52" formControlName="reasonForComplaint"></textarea>
+                                <span
+                                    *ngIf="userForm.get('reasonForComplaint')?.invalid && (userForm.get('reasonForComplaint')?.touched || userForm.get('reasonForComplaint')?.dirty)">
+                                    <small class="text-danger"
+                                        *ngIf="userForm.get('reasonForComplaint')?.errors?.['required']">
+                                        *This is a required field
+                                    </small>
+                                </span>
                             </div>
-                    </form>
-                    <button (click)="formPost()" class="btnSubmit padding-bottom--24">Submit</button>
-                    <!-- <button (click)="routeToSecondPage()" class="btnSubmit padding-bottom--24">Next</button> -->
+                        </form>
+                        <button (click)="formPost()" class="btnSubmit padding-bottom--24">Submit</button>
+                        <!-- <button (click)="routeToSecondPage()" class="btnSubmit padding-bottom--24">Next</button> -->
                     </div>
                 </div>
             </div>

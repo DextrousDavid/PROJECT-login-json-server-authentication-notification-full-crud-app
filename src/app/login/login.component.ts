@@ -38,8 +38,8 @@ export class LoginComponent implements OnInit {
 
     formPostInterface() {
       this.userFormTwo = new FormGroup({
-        customerEmailAddress: new FormControl('', [Validators.required]),
-        customerPassword: new FormControl('', [Validators.required]),
+        customerEmailAddress: new FormControl('', [Validators.required, Validators.email]),
+        customerPassword: new FormControl('', [Validators.required, Validators.pattern('(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[$@$!%*?&])[A-Za-z\d$@$!%*?&].{8,}')]),
       })
     }
 

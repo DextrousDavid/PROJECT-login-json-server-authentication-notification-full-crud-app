@@ -18,9 +18,28 @@
 		<form [formGroup]="userFormTwo" (ngSubmit)="routeToFirstPage()">
 			<h1>Sign in</h1>
 			<span>or use your account</span>
-			<input type="email" placeholder="Email" formControlName="customerEmailAddress"/><br>
+			<input type="email" placeholder="Email" formControlName="customerEmailAddress"/>
+			<span *ngIf="userFormTwo.get('customerEmailAddress')?.invalid && (userFormTwo.get('customerEmailAddress')?.touched || userFormTwo.get('customerEmailAddress')?.dirty)">
+				<small class="text-danger" *ngIf="userFormTwo.get('customerEmailAddress')?.errors?.['required']">
+					*This is a required field
+				</small>
+				<small class="text-danger" *ngIf="userFormTwo.get('customerEmailAddress')?.errors?.['email']">
+					*Please enter a valid email address
+				</small>
+			</span>
+			<br>
+
 			<input type="password" placeholder="Password" formControlName="customerPassword" />
-			<div style="margin-top: 10px;">
+			<span *ngIf="userFormTwo.get('customerPassword')?.invalid && (userFormTwo.get('customerPassword')?.touched || userFormTwo.get('customerPassword')?.dirty)">
+				<small class="text-danger" *ngIf="userFormTwo.get('customerPassword')?.errors?.['required']">
+					*This is a required field
+				</small>
+				<small class="text-danger" *ngIf="userFormTwo.get('customerPassword')?.errors?.['pattern']">
+					*Hint: Lowercase, UpperCase, Number and Symbol
+				</small>
+			</span>
+
+			<div style="margin-top: 25px;">
 			<a class="sign-in-btn" (click)="routeToFirstPage()"> Login</a>
 			</div>
 		</form>
