@@ -75,7 +75,7 @@
 
                             <div class="field padding-bottom--24">
                                 <label for="lname">Customer Age</label>
-                                <input type="text" formControlName="customerAge">
+                                <input type="number" formControlName="customerAge">
                                 <span
                                 *ngIf="userForm.get('customerAge')?.invalid && (userForm.get('customerAge')?.touched || userForm.get('customerAge')?.dirty)">
                                 <small class="text-danger"
@@ -83,15 +83,11 @@
                                     *This is a required field
                                 </small>
                                 <small class="text-danger"
-                                    *ngIf="userForm.get('customerAge')?.errors?.['pattern']">
-                                    *pattern
-                                </small>
-                                <small class="text-danger"
                                     *ngIf="userForm.get('customerAge')?.errors?.['min']">
-                                    *Customer must be 18 or above 18years old! </small>
+                                    *Customer must be between 18 and 75 years old! </small>
                                 <small class="text-danger"
                                     *ngIf="userForm.get('customerAge')?.errors?.['max']">
-                                    *Customer must be 75 or below 75years old!
+                                    *Customer must be between 18 and 75 years old!
                                 </small>
                             </span>
                             </div>

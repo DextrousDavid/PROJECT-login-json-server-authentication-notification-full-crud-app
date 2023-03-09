@@ -152,6 +152,15 @@
       "customerAge": "37",
       "reasonForComplaint": "Invalid BVN",
       "id": 22
+    },
+    {
+      "customerName": "Samatha Smith",
+      "customerAcctNum": "2028373827",
+      "customerEmailAddress": "samanthasmith@gmail.com",
+      "customerAcctType": "Savings Account",
+      "customerAge": 47,
+      "reasonForComplaint": "Just saying Hi from this side.. lol",
+      "id": 23
     }
   ]
 }
